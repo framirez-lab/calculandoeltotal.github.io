@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+              <h6>Laptop Gamer AMD</h6>
+              <p>Precio base: $<span class="precio-inicial"></span> </p>
+        
+              <p>Cantidad:
+                <span class="cantidad">0</span>
+                <button id="suma" onclick="document.querySelector('.cantidad').innerHTML = ++cantidad;
+                document.querySelector('.valor-total').innerHTML = precio * cantidad;">+</button>
+                <button id="resta" onclick="document.querySelector('.cantidad').innerHTML = --cantidad;
+                document.querySelector('.valor-total').innerHTML = precio * cantidad;">-</button>
+              </p>
+        </div>
+
+
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span class="valor-total"></span> </p>
+        <p id="colores">Colores disponibles</p>
+        <div class="color-selector">
+            
+            <input type="radio" id="colorRojo" name="color" value="#ff0000" />
+            <label for="colorRojo" style="background-color: #ff0000;"></label>
+    
+            <input type="radio" id="colorVerde" name="color" value="#00ff00" />
+            <label for="colorVerde" style="background-color: #00ff00;"></label>
+    
+            <input type="radio" id="colorAzul" name="color" value="#0000ff" />
+            <label for="colorAzul" style="background-color: #0000ff;"></label>
+        </div>
+           
+           
+        </div>
+        
+
+    
+    <script src="./assets/js/index.js">
+      
+
+    </script>
+</body>
+</html>
